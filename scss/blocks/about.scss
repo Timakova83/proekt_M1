@@ -1,16 +1,18 @@
+@import './variables';
 .about {
     margin: 0;
     width: 720px;
     font-family: Montserrat, sans-serif;
     font-weight: normal;
-    &__title {
+    &__title {        
         line-height: 140%;
         font-size: 36px;
         font-weight: 600;
-        margin-bottom: 46px;
+        margin-bottom: 26px;
     }
     &__text1 {
-        
+        display: block;
+        width: 654px;
         padding: 20Px 0;
         font-weight: 400;
         font-size: 18px;
@@ -35,7 +37,7 @@
         justify-items: center;
         column-gap: 25px;
         row-gap: 25px;
-        background: #2C3878;
+        background: $PrimaryBlue100;
         align-items: center;
         
         &__image {
@@ -49,22 +51,48 @@
             color: #fff;
         }
     }
+   
 }
 
 .count {
     &__title {
+        display: block;
+        width: 720px;
         font-size: 16px;
         padding: 20px 0;
         font-weight: 500;
-font-size: 16px;
         &::after {
             position: absolute;
             content: '';
             top: 1279px;
-            right: 700px;
+            margin: 0 0 0 13px;
             width: 530px;
             height: 1px;
             background: #000;
         }
     }
+    &__button {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        position: absolute;
+        top: auto; 
+        flex-direction: row;              
+        right: 504px;
+        height: 50px;
+        width: 175px;
+        color: #fff;
+        padding: 10px 25px;
+        background: $PrimaryBlue100;
+    }
+    &__image {
+        position: absolute;
+        margin: 150px 0;
+        object-fit: cover;
+        width: 100%;
+        height: 436px;
+        left: 0;
+        right: 0;
+    }
 }
+

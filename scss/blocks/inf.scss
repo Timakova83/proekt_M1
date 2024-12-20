@@ -1,0 +1,63 @@
+@import './variables';
+
+.inf {
+    
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    &__title {
+        
+        margin-top: 700px;
+        width: 720px;
+        font-size: 16px;
+        padding: 20px 0;
+        font-weight: 500;
+        &::after {
+            position: absolute;
+            content: '';
+           
+            margin: 9px 0 0 13px;
+            width: 530px;
+            height: 1px;
+            background: #000;
+        }
+        &__title1 {
+            line-height: 140%;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 26px;
+        }
+    }  
+
+}
+
+.inf__galery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    
+    
+    &__image1 {
+        grid-column: span 2;
+       
+    }
+    &__image2 {
+        grid-row: span 2;
+      
+    }
+    span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 400;
+        padding-top: 150px;
+        padding-bottom: 10px;
+        line-height: 160%;
+        width: 395px;
+        height: 44px;
+        z-index: 2;
+    }
+  
+}
