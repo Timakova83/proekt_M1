@@ -1,0 +1,61 @@
+@import './variables';
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 130px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 470px;
+    width: 100%;
+    background: $PrimaryBlue100; 
+    color: #fff;
+    margin: 0;
+    padding: 0 50px;
+    &__left {
+        font-weight: 600;
+        font-size: 32px;
+        padding-top: 77px;
+        line-height: 120%;    
+    }
+    &__right {
+        width: 500px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        padding-top: 77px;
+        &__name {
+            background-color: $PrimaryBlue100;
+            border-color: #f80606;
+            border: 1px; 
+            
+        }
+        &__button {
+            
+            align-content: center;
+            top: auto; 
+            flex-direction: row;              
+            right: 900px;
+            height: 50px;
+            width: 245px;
+            color: $PrimaryBlue100;
+            padding: 10px 25px;
+            background: #fff;
+        }
+        &__tel {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 150%;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1279px) and (min-width: 768px){
+
+}
+
+@media screen and (max-width: 767px){
+    
+}

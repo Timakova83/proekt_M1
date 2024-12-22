@@ -5,7 +5,7 @@
     &__title {
         display: block;
         margin-top: 700px;
-        /*width: 720px;*/
+       
         font-size: 16px;
         padding: 20px 0;
         font-weight: 500;
@@ -47,6 +47,13 @@
         width: 395px;
         height: 44px;
         z-index: 2;
-    }
-  
+    } 
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px){
+
+}
+
+@media screen and (max-width: 767px){
+    
 }
