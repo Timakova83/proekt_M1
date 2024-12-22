@@ -6,7 +6,6 @@
     font-family: Montserrat, sans-serif;
     font-weight: normal;
     &__title {
-        /*display: block;     */  
         margin-top: 100px;
         width: 720px;
         font-size: 16px;
@@ -20,13 +19,9 @@
             height: 1px;
             background: #000;
         }
-        &__intem {
-            line-height: 140%;
-            font-size: 36px;
-            font-weight: 600;
-            margin-bottom: 26px;
-        }
-        
     }
-
+    &__text1 {
+        display: block;    
+        width: 788px;
+    }
 }

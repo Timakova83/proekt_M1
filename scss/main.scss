@@ -16,6 +16,16 @@ a {
     margin: 0 auto;
 }
 
+h2 {
+    line-height: 140%;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 26px;
+    width: 720px;    
+}
+
+
+
 @media screen and (max-width: 1279px) and (min-width: 768px) {
     .conteiner {
         width: 90vw;
