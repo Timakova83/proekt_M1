@@ -97,9 +97,41 @@
 }
 
 @media screen and (max-width: 1279px) and (min-width: 768px){
+    .count {
+        height: 100px;
+        &__title {
+            width: 720px;
+            height: 768px;
+            max-width: 480px;
+            &::after {
+                position: absolute;
+                content: '';
+                
+                top: 1128px;
+                margin: 0 0 0 13px;
+                
+               
+            }
+        }
+       
+    }
+    .about {
+        
+       &__advantage {
+            height: 740px;
+            width: 768px;
+            margin: 50px 0;
+            grid-template-columns: 200px 30vw;
+            grid-template-rows: repeat(5, 1fr);
 
+        }
+        &__text2{
+            margin: 0 0 20px 0;
+        }
+    
+    }
 }
 
 @media screen and (max-width: 767px){
-    
+
 }
