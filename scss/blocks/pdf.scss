@@ -70,5 +70,33 @@
 }
 
 @media screen and (max-width: 767px){
-    
+    .pdf {
+        margin-bottom: 50px;
+        &__title {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 150%;
+            
+            &::after {
+                width: 260px;
+                
+            }
+            &__item {
+                
+               
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+        &__text {
+            padding: 10px 30px 160px 20px;
+            &__image {
+                top: 245px;
+                left: 0;
+                width: 130px;
+            }
+        }
+
+    }
 }
