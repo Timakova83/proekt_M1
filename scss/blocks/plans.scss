@@ -1,0 +1,141 @@
+@import './variables';
+
+.inf {
+    display: block;
+    width: 1200px;
+    &__plans {
+        
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        &__title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+        }
+        &__blok1 {
+            width: 330px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%
+            
+        }
+        &__image1 {
+            
+            position: absolute;
+            margin: 150px 0;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            left: 0;
+            right: 0;
+        }
+        &__blok__button {
+            
+            align-content: center;
+            top: auto; 
+            flex-direction: row;              
+            right: 900px;
+            height: 50px;
+            width: 230px;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 50px;
+            background: $PrimaryBlue100;
+        }
+
+    }
+
+}
+.pdf {
+    
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    margin-bottom: 136px;
+    &__title1 {
+        margin-top: 700px;
+        width: 720px;
+        font-size: 16px;
+        padding: 20px 0;
+        font-weight: 500;
+        &::after {
+            position: absolute;
+            content: '';           
+            margin: 9px 0 0 13px;
+            width: 530px;
+            height: 1px;
+            background: #000;
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px){
+    .pdf {
+        &__title1 {
+            margin-top: 14px;
+        }
+    }
+    .inf__plans {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .pdf {
+        margin-bottom: 50px;
+        &__title1 {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 150%;
+            
+            &::after {
+                width: 260px;
+                
+            }
+            &__item {
+                
+               
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+        &__text {
+            padding: 10px 30px 160px 20px;
+            &__image {
+                top: 318px;
+                left: 0;
+                width: 130px;
+            }
+        }
+
+    }
+    .inf__plans {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 30px;
+        &__blok1 {
+            position: relative;
+            display: block;
+            width: 330px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+        }
+    }
+    .pdf {
+       
+        &__title1 {
+            margin-top: 400px;
+                
+        }
+    }
+}
